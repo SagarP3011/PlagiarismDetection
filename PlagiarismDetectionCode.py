@@ -65,8 +65,8 @@ def get_url(sentence):
     def google_custom_search(query):
         try:
             base_url = 'https://www.googleapis.com/customsearch/v1'
-            api_key = "AIzaSyAiBAgFi3dmUgf9ksl0ZMwK0GtDeCb9-v4"  
-            cse_id = "015ed570747e24fce"  
+            api_key = "YOUR_API_KEY"  
+            cse_id = "YOUR_CSE_ID"  
 
             params = {"q": query, "key": api_key, "cx": cse_id}
             response = requests.get(base_url, params=params, timeout=5)
